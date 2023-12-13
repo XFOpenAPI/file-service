@@ -1,8 +1,0 @@
-### 业务单上传成功
-GET https://api-i.test.xforceplus.com/bizorder/MO915Z7N/default/v1/bizorders/result/upload-and-split/825995790364139520
-Content-Type: application/json
-Accept-Encoding: deflate
-Authentication: standard-open-platform-demoTN1618456256032
-uiaSign: badd0f229c223681562a2f3f65cb0824
-serialNo: a1234567890
-
