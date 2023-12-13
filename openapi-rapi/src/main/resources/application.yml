@@ -1,0 +1,46 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    health:
+      show-details: always
+  health:
+    elasticsearch:
+      enabled: false
+  security:
+    enabled: false
+server:
+  port: 8080
+security:
+  basic:
+    enable: false
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+  mvc:
+    async:
+      request-timeout: -1
+  application:
+    name: openapi-rapi
+  profiles:
+    active: sandbox
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  logback:
+    max-file-size: 10MB
+    max-index: 3
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+logging:
+  level:
+    com.xforceplus: error
+    sqlLogger: error

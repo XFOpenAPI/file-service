@@ -1,0 +1,23 @@
+### 业务单上传成功
+POST https://api-i.test.xforceplus.com/bizorder/jiayiDemo/default/v1/bizorders/action/query
+Content-Type: application/json
+Accept-Encoding: deflate
+Authentication: standard-open-platform-demoTN1618456256032
+uiaSign: badd0f229c223681562a2f3f65cb0824
+serialNo: a1234567890
+
+{
+  "conditions": [
+    {
+      "field": "sellerTaxNo",
+      "conditionOP": "eq",
+      "value": "aa",
+      "values": []
+    }
+  ],
+  "page": {
+    "pageNo": 1,
+    "pageSize": 10
+  },
+  "sorts": []
+}
